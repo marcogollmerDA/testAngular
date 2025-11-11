@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-test1',
   imports: [],
   templateUrl: './test1.html',
-  styleUrl: './test1.scss'
+  styleUrl: './test1.scss',
 })
 export class Test1 {
 // Konfiguration
@@ -99,5 +99,13 @@ function generateRandomPosition() {
             y: Math.floor(Math.random() * GRID_SIZE)
         };
     } while (isPositionOnSnake(newFood));
-    return newFood;
+    return newFood;  
+    
+    constructor() {
+    this.sayHello();
+  }
+
+  sayHello() {
+    console.log('Hello');
+  }
 }
