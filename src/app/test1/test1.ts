@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-test1',
@@ -99,7 +99,9 @@ function generateRandomPosition() {
             y: Math.floor(Math.random() * GRID_SIZE)
         };
     } while (isPositionOnSnake(newFood));
-    return newFood;  constructor() {
+    return newFood;  
+    
+    constructor() {
     this.sayHello();
   }
 
