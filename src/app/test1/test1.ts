@@ -4,8 +4,14 @@ import { Component } from '@angular/core';
   selector: 'app-test1',
   imports: [],
   templateUrl: './test1.html',
-  styleUrl: './test1.scss'
+  styleUrl: './test1.scss',
 })
 export class Test1 {
+  constructor() {
+    this.sayHello();
+  }
 
+  sayHello() {
+    console.log('Hello');
+  }
 }
